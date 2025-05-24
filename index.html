@@ -1,42 +1,39 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Preços</title>
+    <title>Página Inicial</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="home-page">
+
+    <header>
+    <nav class="menu">
+        <a href="home.html">Página inicial</a>
+        <a href="index.html">Calculadora</a>
+        <a href="#contato">Contato</a>
+        
+    </nav>
+</header>
+
+<main>
+    
     <div class="container">
+    <h1>Bem vindo(a) à Calculadora de Preços</h1>
+    <p>Ferramenta para calcular preço de venda considerando custos e margem.</p>
+    <a href="index.html">Ir para calculadora!</a>
+    </div>
 
-    <h1>Calculadora de Preços</h1>
+    <section id="#contato">
+        <h2>Contato</h2>
+        <p>Meu email: Guilherme4498gr@gmail.com</p>
+    </section>
 
-    <form id="calcForm" action="" >
-
-    <label for="custo">Custo do material: </label>
-    <input type="number" name="custo" id="custo" step="0.01">
-
-    <label for="custoEmbalagem">Custos Váriaveis: (R$)</label>
-    <input type="number" name="custoEmbalagem0" id="custoEmbalagem" step="0.01">
-
-    <label for="taxa">Taxa Adicional (%): </label>
-    <input type="number" name="taxa" id="taxa" step="0.01">
-
-    <label for="imposto">imposto (%): </label>
-    <input type="number" name="imposto" id="imposto" step="0.01">
-
-    <label for="margem">Margem de Lucro (%): </label>
-    <input type="number" name="margem" id="margem" step="0.01">
-
+    </main>
     
-
-    <button onclick="calcular()">Calcular: </button>
-    </form>
-
-    <div id="resultado"></div>
-    
-
-    <script src="script.js"></script>
-
+    <footer>
+        <p>© 2025 Guilherme R. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
