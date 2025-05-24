@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Preços</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+    <h1>Calculadora de Preços</h1>
+
+    <form id="calcForm" action="" >
+
+    <label for="custo">Custo do material: </label>
+    <input type="number" name="custo" id="custo" step="0.01">
+
+    <label for="custoEmbalagem">Custos Váriaveis: (R$)</label>
+    <input type="number" name="custoEmbalagem0" id="custoEmbalagem" step="0.01">
+
+    <label for="taxa">Taxa Adicional (%): </label>
+    <input type="number" name="taxa" id="taxa" step="0.01">
+
+    <label for="imposto">imposto (%): </label>
+    <input type="number" name="imposto" id="imposto" step="0.01">
+
+    <label for="margem">Margem de Lucro (%): </label>
+    <input type="number" name="margem" id="margem" step="0.01">
+
+    
+
+    <button onclick="calcular()">Calcular: </button>
+    </form>
+
+    <div id="resultado"></div>
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
